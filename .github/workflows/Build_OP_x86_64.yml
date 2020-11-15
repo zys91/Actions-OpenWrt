@@ -12,6 +12,11 @@ name: Build X86(64bit) OpenWrt
 
 on:
   repository_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'x86_64.config'
   workflow_dispatch:
     inputs:
       ssh:
