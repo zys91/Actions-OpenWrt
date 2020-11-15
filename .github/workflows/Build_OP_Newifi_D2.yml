@@ -12,6 +12,11 @@ name: Build Newifi D2 OpenWrt
 
 on:
   repository_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Newifi_D2.config'
   workflow_dispatch:
     inputs:
       ssh:
