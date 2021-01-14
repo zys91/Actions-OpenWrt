@@ -21,6 +21,18 @@ It may take a long time to create a `.config` file and build the OpenWrt firmwar
 
 Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
 
+
+## Details
+
+**点击下表中 [![](https://img.shields.io/badge/设备-passing-32CD32.svg)](https://github.com/IvanSolis1989/OpenWrt-DIY/actions) 即可跳转到该设备固件下载页面** 
+
+|    序号   |     设备平台     |   编译状态及下载链接 |   插件配置   | 备注说明   |
+| :-----------------: | :-------------: |:-----------------: | :-----------------: |  :-----------------: | 
+| 1 |   [![](https://img.shields.io/badge/OpenWrt-x86_64_(64位)-FFFFFF.svg)](https://github.com/zys91/Actions-OpenWrt/actions?query=workflow%3A%22Build+X86%2864bit%29+OpenWrt%22)    | [![](https://github.com/zys91/Actions-OpenWrt/workflows/Build%20X86(64bit)%20OpenWrt/badge.svg)](https://github.com/zys91/Actions-OpenWrt/actions?query=workflow%3A%22Build+X86%2864bit%29+OpenWrt%22) |[![](https://img.shields.io/badge/编译-配置-orange.svg)](https://github.com/zys91/Actions-OpenWrt/blob/master/x86_64.config) |  |  
+| 2 |    [![](https://img.shields.io/badge/OpenWrt-红米_AC2100-FFFFFF.svg)](https://github.com/zys91/Actions-OpenWrt/actions?query=workflow%3A%22Build+Redmi+AC2100+OpenWrt%22)     | [![](https://github.com/zys91/Actions-OpenWrt/workflows/Build%20Redmi%20AC2100%20OpenWrt/badge.svg)](https://github.com/zys91/Actions-OpenWrt/actions?query=workflow%3A%22Build+Redmi+AC2100+OpenWrt%22) |[![](https://img.shields.io/badge/编译-配置-orange.svg)](https://github.com/zys91/Actions-OpenWrt/blob/master/Redmi_AC2100.config) | | 
+| 3 |    [![](https://img.shields.io/badge/OpenWrt-Newifi3_D2-FFFFFF.svg)](https://github.com/zys91/Actions-OpenWrt/actions?query=workflow%3A%22Build+Newifi+D2+OpenWrt%22)      |  [![](https://github.com/zys91/Actions-OpenWrt/workflows/Build%20Newifi%20D2%20OpenWrt/badge.svg)](https://github.com/zys91/Actions-OpenWrt/actions?query=workflow%3A%22Build+Newifi+D2+OpenWrt%22) |[![](https://img.shields.io/badge/编译-配置-orange.svg)](https://github.com/zys91/Actions-OpenWrt/blob/master/Newifi_D2.config)  | | 
+| 4 |    [![](https://img.shields.io/badge/OpenWrt-WPJ419-FFFFFF.svg)](https://github.com/zys91/Actions-OpenWrt/actions?query=workflow%3A%22Build+WPJ419+OpenWrt%22)      |  [![](https://github.com/zys91/Actions-OpenWrt/workflows/Build%20WPJ419%20OpenWrt/badge.svg)](https://github.com/zys91/Actions-OpenWrt/actions?query=workflow%3A%22Build+WPJ419+OpenWrt%22) |[![](https://img.shields.io/badge/编译-配置-orange.svg)](https://github.com/zys91/Actions-OpenWrt/blob/master/WPJ419.config)  | | 
+
 ## Acknowledgments
 
 - [Microsoft](https://www.microsoft.com)
