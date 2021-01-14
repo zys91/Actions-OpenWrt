@@ -3,7 +3,6 @@
 ![Visitors](https://visitor-badge.glitch.me/badge?page_id=Actions-OpenWrt-visitor-badge)
 ![GitHub Stars](https://img.shields.io/github/stars/zys91/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
 ![GitHub Forks](https://img.shields.io/github/forks/zys91/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
-![Release Date](https://github.com/zys91/Actions-OpenWrt/actions)
 
 Build OpenWrt using GitHub Actions
 
