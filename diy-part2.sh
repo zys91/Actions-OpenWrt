@@ -44,10 +44,6 @@ git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 # Add luci-app-gowebdav
 git clone --depth=1 https://github.com/project-openwrt/openwrt-gowebdav
 
-# Add luci-app-jd-dailybonus
-git clone --depth=1 https://github.com/jerrykuku/node-request
-git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
-
 # Add luci-theme-rosy
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-rosy
 
