@@ -13,5 +13,5 @@
 # Uncomment a feed source
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add Lienol source (PassWall) (need remove clash packages)
+# Add Lienol source (need remove clash packages)
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
