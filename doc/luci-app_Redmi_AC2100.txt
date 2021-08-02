@@ -1,0 +1,40 @@
+MediaTek Ralink MIPS - MT7621 based boards - xiaomi_redmi-router-ac2100
+
+support ipv6:
+Extra packages  --->  ipv6helper
+Base system ---> dnsmasq-full ---> build with DHCPv6 support
+Network ---> Firewall ---> ip6tables ---> ip6tables-extra
+Network ---> Firewall ---> ip6tables ---> ip6tables-mod-nat
+
+Luci -> 
+#
+# 3. Applications
+#
+CONFIG_PACKAGE_luci-app-accesscontrol=y
+CONFIG_PACKAGE_luci-app-arpbind=y
+CONFIG_PACKAGE_luci-app-autoreboot=y
+CONFIG_PACKAGE_luci-app-filetransfer=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-mtwifi=y
+CONFIG_PACKAGE_luci-app-qbittorrent_dynamic=y
+CONFIG_PACKAGE_luci-app-ramfree=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-app-turboacc=y
+CONFIG_PACKAGE_TURBOACC_INCLUDE_OFFLOADING=y
+CONFIG_PACKAGE_TURBOACC_INCLUDE_BBR_CCA=y
+CONFIG_PACKAGE_TURBOACC_INCLUDE_DNSPROXY=y
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-app-watchcat=y
+CONFIG_PACKAGE_luci-app-webadmin=y
+CONFIG_PACKAGE_luci-app-wol=y
+CONFIG_PACKAGE_luci-app-zerotier=y
+# end of 3. Applications
+
+#
+# 4. Themes
+#
+CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+
+# end of 4. Themes
+

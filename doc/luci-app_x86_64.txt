@@ -1,0 +1,65 @@
+support ipv6:
+Extra packages  --->  ipv6helper
+Base system ---> dnsmasq-full ---> build with DHCPv6 support
+Network ---> Firewall ---> ip6tables ---> ip6tables-extra
+Network ---> Firewall ---> ip6tables ---> ip6tables-mod-nat
+ 
+Luci -> 
+#
+# 3. Applications
+#
+CONFIG_PACKAGE_luci-app-accesscontrol=y
+CONFIG_PACKAGE_luci-app-arpbind=y
+CONFIG_PACKAGE_luci-app-autoreboot=y
+CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_luci-app-filetransfer=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-qbittorrent_static=y
+CONFIG_PACKAGE_luci-app-ramfree=y
+CONFIG_PACKAGE_luci-app-samba=y
+CONFIG_PACKAGE_luci-app-ssr-plus=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-app-turboacc=y
+CONFIG_PACKAGE_TURBOACC_INCLUDE_SHORTCUT_FE=y
+CONFIG_PACKAGE_TURBOACC_INCLUDE_BBR_CCA=y
+CONFIG_PACKAGE_TURBOACC_INCLUDE_DNSPROXY=y
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-app-watchcat=y
+CONFIG_PACKAGE_luci-app-webadmin=y
+CONFIG_PACKAGE_luci-app-wol=y
+CONFIG_PACKAGE_luci-app-zerotier=y
+# end of 3. Applications
+
+#
+# 4. Themes
+#
+CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+
+# end of 4. Themes
+
+
+Tips:
+1、支持 iPv6
+Base system ---> dnsmasq-full ---> build with DHCPv6 support
+Network ---> Firewall ---> ip6tables ---> ip6tables-extra
+Network ---> Firewall ---> ip6tables ---> ip6tables-mod-nat
+Extra packages  --->  ipv6helper  （选定这个后下面几项自动选择了）
+	Network  --->  odhcp6c
+	Network  --->  odhcpd-ipv6only
+	LuCI  --->  Protocols  --->  luci-proto-ipv6
+	LuCI  --->  Protocols  --->  luci-proto-ppp
+
+2、打开适用于VMware的VM Tools
+Utilities  --->  open-vm-tools  #打开适用于VMware的VM Tools
+Utilities  --->  open-vm-tools-fuse  #打开适用于VMware的VM Tools
+
+3、编译丰富插件时，建议修改下面两项默认大小，留足插件空间。（x86/64）
+Target Images ---> (16) Kernel partition size (in MB)                        #默认是 (16) 建议修改 (256)
+Target Images ---> (160) Root filesystem partition size (in MB)        #默认是 (160) 建议修改 (512)

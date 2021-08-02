@@ -1,0 +1,37 @@
+ipq40xx - generic - compex_wpj419
+
+Extra packages -> automount
+Extra packages -> autosamba
+
+support ipv6:
+Extra packages  --->  ipv6helper
+Base system ---> dnsmasq-full ---> build with DHCPv6 support
+Network ---> Firewall ---> ip6tables ---> ip6tables-extra
+Network ---> Firewall ---> ip6tables ---> ip6tables-mod-nat
+
+Luci -> 
+#
+# 3. Applications
+#
+CONFIG_PACKAGE_luci-app-accesscontrol=y
+CONFIG_PACKAGE_luci-app-arpbind=y
+CONFIG_PACKAGE_luci-app-autoreboot=y
+CONFIG_PACKAGE_luci-app-cpufreq=y
+CONFIG_PACKAGE_luci-app-filetransfer=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-ramfree=y
+CONFIG_PACKAGE_luci-app-samba=y
+CONFIG_PACKAGE_luci-app-sfe=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-app-webadmin=y
+# end of 3. Applications
+
+#
+# 4. Themes
+#
+CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+
+# end of 4. Themes
+
