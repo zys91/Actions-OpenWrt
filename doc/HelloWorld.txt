@@ -1,0 +1,12 @@
+使用热心网友的hello world的方法
+
+# 本地编译
+1. 在路由器编译目录下，修改feeds.conf.default文件 
+2. 在末尾添加src-git helloworld https://github.com/fw876/helloworld
+3. 执行 ./scripts/feeds update -a && ./scripts/feeds install -a
+
+# 云编译
+修改自己github云编译根目录下的 diy-part1.sh
+添加以下内容：
+	# Add Helloworld source
+	sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
