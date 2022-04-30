@@ -22,7 +22,6 @@ It may take a long time to create a `.config` file and build the OpenWrt firmwar
 
 Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
 
-
 ## Details
 
 **点击下表中 [![](https://img.shields.io/badge/设备-passing-32CD32.svg)](https://github.com/zys91/Actions-OpenWrt/actions) 即可跳转到该设备固件下载页面** 
@@ -37,6 +36,13 @@ Add some meta info of your built firmware (such as firmware architecture and ins
 
 **提示：**[![](https://img.shields.io/badge/设备-passing-32CD32.svg)](https://github.com/zys91/Actions-OpenWrt/actions) 标志为正常，[![](https://img.shields.io/badge/设备-failing-DC143C.svg)](https://github.com/zys91/Actions-OpenWrt/actions) 或 [![](https://img.shields.io/badge/设备-no_status-A9A9A9.svg)](https://github.com/zys91/Actions-OpenWrt/actions) 不代表所有编译均失败。请点击 [![](https://img.shields.io/badge/设备-状态-32CD32.svg)](https://github.com/zys91/Actions-OpenWrt/actions) 到 **Actions** 进一步查看。
 
+## Warnings
+
+1. 小米路由器4A千兆版需要修改 Breed 环境变量参数，具体参考[教程地址](https://blog.kopijahe.my.id/posts/r4a-breed/)
+
+   | Field / 字段     | Value / 值            |
+   | ---------------- | --------------------- |
+   | autoboot.command | boot flash 0x00180000 |
 
 ## Acknowledgments
 
