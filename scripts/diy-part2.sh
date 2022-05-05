@@ -40,6 +40,13 @@ git clone --depth=1 https://github.com/tty228/luci-app-serverchan
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 
+# Add luci-app-argon-config
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+
+# Add luci-app-vssr (need lua-maxminddb)
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
+
 # Add luci-app-onliner (need luci-app-nlbwmon)
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 
