@@ -38,11 +38,9 @@ Add some meta info of your built firmware (such as firmware architecture and ins
 
 ## Warnings
 
-1. 小米路由器4A千兆版需要修改 Breed 环境变量参数，具体参考[教程地址](https://blog.kopijahe.my.id/posts/r4a-breed/)
-
-   | Field / 字段     | Value / 值            |
-   | ---------------- | --------------------- |
-   | autoboot.command | boot flash 0x00180000 |
+1. 小米路由器4A千兆版分为两种固件类型：（本仓库采用第一种，即 Breed 直刷版）
+   - Breed 直刷版，无需修改 Breed 环境变量，采用默认初始设置，需要修改 dtsi 分区文件
+   - 原版 dtsi，不需要修改源码，但是需要修改 Breed 环境变量，具体修改参考[教程地址](https://blog.kopijahe.my.id/posts/r4a-breed/)
 
 ## Acknowledgments
 
